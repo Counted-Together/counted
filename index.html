@@ -4,8 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Counted Together</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+  <h1>Counted Together</h1>
+  <p>Engaged citizens, visible impact</p>
+</header>
+
+<main>
+  <form id="logForm">
+
+    <label for="state">State:</label>
+    <select id="state" required>
+      <option value="">Select your state</option>
+    </select>
+
+    <label for="seniorSenator">Senator (1):</label>
+    <select id="seniorSenator">
+      <option value="">Optional</option>
+    </select>
+
+    <label for="juniorSenator">Senator (2):</label>
+    <select id="juniorSenator">
+      <option value="">Optional</option>
+    </select>
+
+    <label for="houseRep">House Representative:</label>
+    <select id="houseRep">
+      <option value="">Optional</option>
+    </select>
+
+    <label for="method">Method:</label>
+    <select id="method" required>
+      <option value="call">Call</option>
+      <option value="email">Email</option>
+      <option value="letter">Letter</option>
+    </select>
+
+    <button type="submit">Log Contact</button>
+  </form>
+
+  <div id="confirmation"></div>
+</main>
+
+  <script src="script.js"></script>
   <h1>Counted Together</h1>
   <p>Engaged citizens, visible impact</p>
 
