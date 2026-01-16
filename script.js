@@ -1,3 +1,15 @@
+const stateSelect = document.getElementById("state");
+const seniorSelect = document.getElementById("seniorSenator");
+const juniorSelect = document.getElementById("juniorSenator");
+const houseSelect = document.getElementById("houseRep");
+
+// Populate state dropdown
+Object.keys(REPRESENTATIVES).forEach(state => {
+  const option = document.createElement("option");
+  option.value = state;
+  option.textContent = state;
+  stateSelect.appendChild(option);
+});
 const REPRESENTATIVES = {
   "Minnesota": {
     senators: [
