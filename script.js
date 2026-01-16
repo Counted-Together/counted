@@ -1,3 +1,27 @@
+const REPRESENTATIVES = {
+  "Minnesota": {
+    senators: [
+      "Amy Klobuchar",
+      "Tina Smith"
+    ],
+    house: [
+      "Ilhan Omar",
+      "Betty McCollum",
+      "Tom Emmer"
+    ]
+  },
+  "Missouri": {
+    senators: [
+      "Josh Hawley",
+      "Eric Schmitt"
+    ],
+    house: [
+      "Cori Bush",
+      "Ann Wagner",
+      "Sam Graves"
+    ]
+  }
+};
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbysG0D7bsNicaqemV7vX79nUdzW-eUmYoqsCO_QAKHMm2Yv0zVnEJ6pWCxLTZ-gp_N_eg/exec';
 
 const logForm = document.getElementById('logForm');
