@@ -1,3 +1,34 @@
+stateSelect.addEventListener("change", () => {
+  const state = stateSelect.value;
+
+  // Clear existing options
+  seniorSelect.innerHTML = '<option value="">Optional</option>';
+  juniorSelect.innerHTML = '<option value="">Optional</option>';
+  houseSelect.innerHTML = '<option value="">Optional</option>';
+
+  if (!state) return;
+
+  const data = REPRESENTATIVES[state];
+
+  data.senators.forEach(name => {
+    const opt1 = document.createElement("option");
+    opt1.value = name;
+    opt1.textContent = name;
+    seniorSelect.appendChild(opt1);
+
+    const opt2 = document.createElement("option");
+    opt2.value = name;
+    opt2.textContent = name;
+    juniorSelect.appendChild(opt2);
+  });
+
+  data.house.forEach(name => {
+    const opt = document.createElement("option");
+    opt.value = name;
+    opt.textContent = name;
+    houseSelect.appendChild(opt);
+  });
+});
 const stateSelect = document.getElementById("state");
 const seniorSelect = document.getElementById("seniorSenator");
 const juniorSelect = document.getElementById("juniorSenator");
